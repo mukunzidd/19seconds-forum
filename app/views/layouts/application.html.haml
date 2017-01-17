@@ -1,0 +1,23 @@
+!!!
+%html{:lang => "en"}
+%head
+  %meta{:charset => "UTF-8"}/
+  %title 19 Seconds | Forum
+  = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+  = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  %link{rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Work+Sans", type: "text/css"}
+
+
+%body
+  %header.main-header.clearfix
+    #logo
+      %p= link_to '19 seconds forum', root_path
+    .buttons
+      %p= link_to 'New Topic', new_post_path
+
+  .wrapper
+    %p.notice= notice
+    %p.alert= alert
+
+  .wrapper
+    = yield

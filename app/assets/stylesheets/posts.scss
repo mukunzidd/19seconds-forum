@@ -1,3 +1,58 @@
 // Place all the styles related to the posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body {
+	font-family: 'Work Sans', sans-serif;
+	a {
+		text-decoration: none;
+	}
+}
+
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.main-header {
+	width: 90%;
+	max-width: 1140px;
+	margin: 0 auto;
+	a {
+		float: right;
+		margin-top: 25px;
+		font-size: 1.3em;
+		color: black;
+		&:hover {
+			color: teal
+		}
+	}
+}
+
+#logo {
+	float: left;
+	p {
+		display: inline-block;
+		text-transform: uppercase;
+		font-size: 1.4rem;
+		font-weight: 400;
+		letter-spacing: -2px;
+	}
+	a {
+		color: teal;
+	}
+
+
+}
+
+.wrapper {
+	width: 60%;
+	max-width: 1140px;
+	margin: 0 auto;
+	background-color: pink;
+}
