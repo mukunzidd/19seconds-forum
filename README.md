@@ -1,24 +1,19 @@
-# README
+# 19 SECONDS FORUM
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## PURPOSE
 
-Things you may want to cover:
+This forum is for my fellow students(Devs). They will be able to sign up and ask questions or post a topic.
 
-* Ruby version
 
-* System dependencies
+## CONTRIBUTE
 
-* Configuration
+You can contribute to this by opening an issue or making a pull request. I will love any kind of contribution that you can make on this app. 
 
-* Database creation
+##### Contributions can be:
 
-* Database initialization
+- Design-wise
+- Developemnt-wise
 
-* How to run the test suite
+****
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+_HAPPY HACKING_
