@@ -1,0 +1,8 @@
+%h1 Post Show
+
+%h2= @post.title
+%p= simple_format @post.content
+
+= link_to 'Edit', edit_post_path
+= link_to 'Delete'
+= link_to 'Home', root_path

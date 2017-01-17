@@ -1,0 +1,7 @@
+%h2  19 Seconds Posts
+
+- @posts.each do |post|
+	%h2= link_to post.title, post
+	%p= time_ago_in_words(post.created_at)
+
+
