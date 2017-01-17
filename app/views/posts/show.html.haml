@@ -1,6 +1,9 @@
 %h1 Post Show
 
 %h2= @post.title
+%p
+	Posted by  
+	%em= @post.user.username.capitalize
 %p= simple_format @post.content
 
 = link_to 'Edit', edit_post_path
