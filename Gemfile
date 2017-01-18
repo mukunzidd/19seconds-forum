@@ -18,6 +18,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'haml', '~> 4.0', '>= 4.0.7'
 gem 'devise'
 gem 'simple_form'
+gem 'pygments.rb', '~> 0.6.3'
+gem 'redcarpet', '~> 3.4'
 
 # gem 'simple_form'
 group :development, :test do
