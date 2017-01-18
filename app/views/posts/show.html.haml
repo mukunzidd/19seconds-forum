@@ -3,11 +3,11 @@
 
 	%h2= @post.title
 	%p
-		Posted by  
-		%em= @post.user.username.capitalize
+		Posted by
+		= @post.user.username
 	%p= simple_format @post.content
 %hr/
-
+%br/
 = link_to 'Edit', edit_post_path
 = link_to 'Delete'
 = link_to 'Home', root_path
