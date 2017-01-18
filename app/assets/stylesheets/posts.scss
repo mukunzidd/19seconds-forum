@@ -4,7 +4,7 @@
 
 
 $dark: #1F3338;
-// $light: ;
+$light: #52A4AD;
 
 body {
 	font-family: 'Work Sans', sans-serif;
@@ -22,27 +22,38 @@ body {
 	clear: both;
 }
 
-.main-header {
+.header_wrapper {
 	width: 100%;
-	margin: 0 auto;
-	padding: 1.5em 1em;
-	.buttons {
-		float: right;
-		font-size: 1.3em;
-		color: $dark;
-		line-height: 4px;
-		font-weight: 100;
-		text-decoration: none;
-		border: 2px solid $dark;
-		border-radius: 5%;
-		padding: .5em .8em;
-
-
-		&:hover {
-			color: white
-		}
+	background: #FBFEFE;
+	.main-header {
+		width: 90%;
+		margin: 0 auto;
+		padding: 1.5em 1em;
 	}
 }
+	.buttons {
+		float: right;
+		display: inline;
+		margin-top: .625em;
+		margin-right: .5em;
+		p {
+			a {
+				font-size: 1em;
+				line-height: 2px;
+				font-weight: 100;
+				text-decoration: none;
+				border: 1.8px solid teal;
+				border-radius: 3em;
+				padding: .3em .6em;
+				color: teal;
+				margin: 0 .255rem;
+				&:hover {
+					color: white;
+					background: teal;
+				}
+			}
+		}
+	}
 
 #logo {
 	float: left;
@@ -52,7 +63,7 @@ body {
 		font-size: 1.4rem;
 		font-weight: 400;
 		letter-spacing: -2px;
-		margin-left: 2rem;
+		margin-left: .5rem;
 	}
 	a {
 		color: teal;
@@ -74,7 +85,6 @@ body {
 	.post {
 		margin-top: 1.3rem;
 		padding-bottom: 1.2rem;
-		border-bottom: 2px solid #d1d1d1;
 	}
 
 	.title {
@@ -89,8 +99,20 @@ body {
 	}
 	.date {
 		margin-top: .25rem;
-		color: #b2bac2;	
+		color: #6A8180;	
 		font-size: .8em;
 		font-weight: 250;
 	}
+	hr {
+		width: 4rem;
+		border: none;
+		border-bottom: 3.5px solid #6BB8B4;
+		margin: auto 0;
+	}
+}
+hr {
+	width: 90%;
+	border: none;
+	border-bottom: 1px solid #52A4AD;
+	margin: 0 auto;
 }
