@@ -3,6 +3,9 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+$dark: #1F3338;
+// $light: ;
+
 body {
 	font-family: 'Work Sans', sans-serif;
 	a {
@@ -20,16 +23,23 @@ body {
 }
 
 .main-header {
-	width: 90%;
-	max-width: 1140px;
+	width: 100%;
 	margin: 0 auto;
-	a {
+	padding: 1.5em 1em;
+	.buttons {
 		float: right;
-		margin-top: 25px;
 		font-size: 1.3em;
-		color: black;
+		color: $dark;
+		line-height: 4px;
+		font-weight: 100;
+		text-decoration: none;
+		border: 2px solid $dark;
+		border-radius: 5%;
+		padding: .5em .8em;
+
+
 		&:hover {
-			color: teal
+			color: white
 		}
 	}
 }
@@ -42,9 +52,13 @@ body {
 		font-size: 1.4rem;
 		font-weight: 400;
 		letter-spacing: -2px;
+		margin-left: 2rem;
 	}
 	a {
 		color: teal;
+		&:hover {
+			color: teal;
+		}
 	}
 
 
@@ -54,5 +68,29 @@ body {
 	width: 60%;
 	max-width: 1140px;
 	margin: 0 auto;
-	background-color: pink;
+}
+
+#posts{
+	.post {
+		margin-top: 1.3rem;
+		padding-bottom: 1.2rem;
+		border-bottom: 2px solid #d1d1d1;
+	}
+
+	.title {
+		margin: 0;
+		a {
+			font-weight: 100;
+			color: $dark;
+			&:hover {
+				color: teal;
+			}			
+		}
+	}
+	.date {
+		margin-top: .25rem;
+		color: #b2bac2;	
+		font-size: .8em;
+		font-weight: 250;
+	}
 }

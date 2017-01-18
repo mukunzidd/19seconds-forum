@@ -10,10 +10,11 @@
 
 %body
   %header.main-header.clearfix
-    #logo
-      %p= link_to '19 seconds forum', root_path
-    .buttons
-      %p= link_to 'New Topic', new_post_path
+    .header_wrapper
+      #logo
+        %p= link_to '19 seconds forum', root_path
+      .buttons
+        %p= link_to 'New Topic', new_post_path
 
   .wrapper
     %p.notice= notice
