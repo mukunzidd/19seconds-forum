@@ -1,13 +1,14 @@
 .post
-	%h1 Post Show
+	%h1= @post.title
 
-	%h2= @post.title
-	%p
-		Posted by
-		= @post.user.username
+	%p.date 
+		Posted
+		= time_ago_in_words(@post.created_at)
+		ago
+
 	%p= simple_format @post.content
 %hr/
 %br/
 = link_to 'Edit', edit_post_path
-= link_to 'Delete'
+= link_to 'Delete', @post, method: :delete, data: {confirm: 'Are you sure?'}
 = link_to 'Home', root_path
