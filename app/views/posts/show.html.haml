@@ -14,3 +14,15 @@
 		= link_to 'Delete', @post, method: :delete, data: {confirm: 'Are you sure?'}
 	%hr/
 	%br/
+
+	#comments
+		%h2
+			= @post.comments.count 
+			Replies
+
+		= render @post.comments
+
+		%h3 Reply to thread
+
+		= render "comments/form"
+
