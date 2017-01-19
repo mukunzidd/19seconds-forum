@@ -11,7 +11,12 @@ body {
 		text-decoration: none;
 	}
 }
-
+.date {
+		margin-top: .25rem;
+		color: #6A8180;	
+		font-size: .8em;
+		font-weight: 250;
+	}
 .clearfix:before, .clearfix:after {
 	content: " ";
 	display: table;
@@ -96,12 +101,6 @@ body {
 			}			
 		}
 	}
-	.date {
-		margin-top: .25rem;
-		color: #6A8180;	
-		font-size: .8em;
-		font-weight: 250;
-	}
 	hr {
 		width: 4rem;
 		border: none;
@@ -118,3 +117,17 @@ hr {
 
 // ******* Post Show Page
 
+#post {
+	h1 {
+		font-weight: 100;
+		color: teal;
+		font-size: 2em;
+		margin-top: 0;
+	}
+	p {
+		font-size: 0.95rem;
+		font-weight: 100;
+		line-height: 1.5;
+	}
+
+}
